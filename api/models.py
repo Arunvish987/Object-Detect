@@ -2,6 +2,6 @@ from django.db import models
 
 
 class ObjectDetails(models.Model):
-    image_name = models.ImageField(upload_to="images/")
-    object_detected = models.CharField(max_length=250, null=True, blank=True)
-    time_stamp = models.CharField(max_length=250, null=True, blank=True)
+    image_name = models.CharField(max_length=250, null=True, blank=True)
+    objects_detected = models.CharField(max_length=250, null=True, blank=True)
+    timestamp = models.CharField(max_length=250, null=True, blank=True)
